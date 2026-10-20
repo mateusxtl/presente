@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentes Cartoon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importando a fonte divertida Comic Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #A7F3D0; /* Verde pastel vibrante no fundo */
+            background-image: radial-gradient(#059669 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+        
+        /* Efeito de sombra sólida estilo cartoon/neo-brutalismo */
+        .brutal-shadow {
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+            transition: all 0.2s ease-in-out;
+        }
+        .brutal-shadow:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+        }
+        
+        /* Balão de fala para o sarcasmo */
+        .speech-bubble {
+            position: relative;
+        }
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            border-width: 0 10px 10px 0;
+            border-style: solid;
+            border-color: transparent #000 transparent transparent;
+            display: block;
+            width: 0;
+        }
+    </style>
+</head>
+<body class="text-black antialiased min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+
+    <!-- Cabeçalho -->
+    <header class="max-w-6xl mx-auto bg-yellow-300 border-4 border-black brutal-shadow rounded-2xl p-8 mb-16 text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest text-black">
+            Presentes que minha namorada pode me dar
+        </h1>
+    </header>
+
+    <div class="max-w-7xl mx-auto space-y-20">
+        
+        <!-- SEÇÃO 1: OS QUE EU QUERO, MAS É MUITO CARO -->
+        <section>
+            <div class="inline-block bg-pink-400 border-4 border-black brutal-shadow rounded-xl px-6 py-3 mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold uppercase">
+                    Os que eu quero, mas é muito caro 💸
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- PRODUTO 1: DRONE -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_781239-MLA99454010958_112025-F.webp" alt="Drone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-blue-100">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Drone DJI</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "No qual, podemos fazer vários takes para nossas viagens"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 2: PROCESSADOR -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_871623-MLA92019646747_092025-F.webp" alt="Processador AMD" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-orange-200">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">AMD Ryzen 7 5700X</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "No PC em que eu preciso muito para estudar"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 3: PS5 -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_727482-MLA99962144409_112025-F.webp" alt="PlayStation 5" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-purple-200">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">PlayStation 5</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "Pra relaxar a mente depois de tanto estudar"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 4: MOUSE -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://acdn-us.mitiendanube.com/stores/001/929/213/products/1-2874b7be90f0b0312217724230102961-640-0.webp" alt="Mouse Gamer ATK" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-red-200">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Mouse ATK A9 Air</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "No qual, eu preciso ter a melhor precisão para não errar na prova"
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: OS QUE EU ACHO QUE ELA DEVERIA ME DAR -->
+        <section>
+            <div class="inline-block bg-purple-400 border-4 border-black brutal-shadow rounded-xl px-6 py-3 mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold uppercase text-white">
+                    Os que eu acho que ela deveria me dar 🎁
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- PRODUTO 5: RELÓGIO COURO -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://lojavivarafsv3.vtexassets.com/arquivos/ids/935233-1600-1600/Relogio-Tommy-Hilfiger-Masculino-Couro-Preto-1710668-105538_1_set.jpg?v=638763426205770000 alt="Relógio de Couro" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-amber-100">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Relógio de tommy hilfiger</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "quem da esse relogio, costuma comprar uma polo tb, para combinar"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 6: PERFUME -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_822715-MLA84847879925_052025-F.webp" alt="Perfume CK" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-teal-100">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Perfume Calvin klein one</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "Porque você merece que eu ande sempre cheiroso do seu lado"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 7: RELÓGIO AÇO -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_783691-MLA99547056814_122025-F.webp" alt="Relógio de Aço" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-slate-200">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Relógio poedagar</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            ""Dessa vez o "ORIGINAL" KKKKKKKKKK""
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUTO 8: TÊNIS -->
+                <div class="bg-white border-4 border-black brutal-shadow rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-56 border-b-4 border-black bg-gray-100 flex items-center justify-center relative">
+                        <!-- ========================================================= -->
+                        <!-- COLOQUE O LINK DA SUA IMAGEM AQUI EMBAIXO NO ATRIBUTO src -->
+                        <!-- ========================================================= -->
+                        <img src="https://imgnike-a.akamaihd.net/768x768/02732251A13.jpg" alt="Tênis Nike" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow bg-emerald-100">
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Tênis Nike</h3>
+                        <div class="mt-auto bg-white border-4 border-black rounded-xl p-3 speech-bubble font-bold italic text-lg">
+                            "precisando para viajar"
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
